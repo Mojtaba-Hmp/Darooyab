@@ -25,6 +25,7 @@ class MyAdapter(val resultsList: MutableList<Medicine>) : RecyclerView.Adapter<M
         holder.binding.engNameTextView.text = resultsList[position].engName
         holder.binding.faNameTextView.text = resultsList[position].faName
         holder.binding.dosageTextView.text = resultsList[position].dosage
+        holder.binding.typeTextView.text = resultsList[position].type
     }
 
     override fun getItemCount(): Int {

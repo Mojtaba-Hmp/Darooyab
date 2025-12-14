@@ -57,12 +57,23 @@
                 android:id="@+id/dosageTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/engNameTextView"
+                app:layout_constraintStart_toEndOf="@+id/faNameTextView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/typeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="TextView"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/engNameTextView"
-                app:layout_constraintStart_toEndOf="@+id/faNameTextView"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/faNameTextView" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
