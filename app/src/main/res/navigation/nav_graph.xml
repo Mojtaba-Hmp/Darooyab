@@ -8,24 +8,24 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.darooyab.view.MainFragment"
+        android:name="com.example.darooyab.view.fragments.MainFragment"
         android:label="main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_resultsFragment"
-            app:destination="@id/resultsFragment" />
+            android:id="@+id/action_mainFragment_to_medicineResultsFragment"
+            app:destination="@id/medicineResultsFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
+            android:id="@+id/action_mainFragment_to_pharmaciesResultsFragment"
+            app:destination="@id/pharmaciesResultsFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/resultsFragment"
-        android:name="com.example.darooyab.view.ResultsFragment"
-        android:label="resultsFragment"
-        tools:layout="@layout/fragment_results" >
+        android:id="@+id/medicineResultsFragment"
+        android:name="com.example.darooyab.view.fragments.MedicineResultsFragment"
+        android:label="medicineResultsFragment"
+        tools:layout="@layout/fragment_medicine_results" >
         <action
-            android:id="@+id/action_resultsFragment_to_mainFragment"
+            android:id="@+id/action_medicineResultsFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
 
         <argument
@@ -33,20 +33,24 @@
             app:argType="string" />
 
         <action
-            android:id="@+id/action_resultsFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
+            android:id="@+id/action_medicineResultsFragment_to_pharmaciesResultsFragment"
+            app:destination="@id/pharmaciesResultsFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/thirdFragment"
-        android:name="com.example.darooyab.view.ThirdFragment"
-        android:label="third"
-        tools:layout="@layout/fragment_third" >
+        android:id="@+id/pharmaciesResultsFragment"
+        android:name="com.example.darooyab.view.fragments.PharmaciesResultsFragment"
+        android:label="pharmaciesResultsFragment"
+        tools:layout="@layout/fragment_pharmacies_results" >
         <action
-            android:id="@+id/action_thirdFragment_to_mainFragment"
+            android:id="@+id/action_pharmaciesResultsFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+
+        <argument
+            android:name="drugId"
+            app:argType="integer" />
         <action
-            android:id="@+id/action_thirdFragment_to_resultsFragment"
-            app:destination="@id/resultsFragment" />
+            android:id="@+id/action_pharmaciesResultsFragment_to_medicineResultsFragment"
+            app:destination="@id/medicineResultsFragment" />
     </fragment>
 </navigation>
