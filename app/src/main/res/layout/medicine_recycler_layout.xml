@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
                 android:text="TextView"
-                android:textColor="@color/black"
+                android:textColor="@color/red"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@+id/faNameTextView"
                 app:layout_constraintEnd_toStartOf="@+id/faNameTextView"
