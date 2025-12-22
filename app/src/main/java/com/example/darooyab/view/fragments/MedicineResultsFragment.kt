@@ -9,12 +9,12 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.darooyab.adapter.MedicineAdapter
-import com.example.darooyab.databinding.FragmentResultsBinding
+import com.example.darooyab.databinding.FragmentMedicineResultsBinding
 import com.example.darooyab.model.Medicine
 
 class MedicineResultsFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        val binding = FragmentResultsBinding
+        val binding = FragmentMedicineResultsBinding
             .inflate(LayoutInflater.from(activity), container, false)
 
 
