@@ -7,4 +7,3 @@ data class Medicine(
     val dosage: String,
     val type: String
 )
-

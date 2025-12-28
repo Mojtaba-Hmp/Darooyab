@@ -23,6 +23,7 @@ class MainFragment : Fragment() {
             }
         }
 
+        //when user presses Enter key
         binding.searchEditText.setOnEditorActionListener(object: TextView.OnEditorActionListener{
             override fun onEditorAction(v: TextView?, actionId: Int, event: KeyEvent?): Boolean {
                 if(actionId == EditorInfo.IME_ACTION_DONE || event?.action == KeyEvent.ACTION_DOWN && event.keyCode == KeyEvent.KEYCODE_ENTER){
