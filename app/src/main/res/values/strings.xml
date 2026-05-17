@@ -2,4 +2,10 @@
     <string name="app_name">Darooyab</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drug_name">نام دارو</string>
+    <string name="search_description">جستجو</string>
+    <string name="No_results_found_textView">نتیجه‌ای یافت نشد</string>
+    <string name="No_pharmacies_found_textView">داروخانه‌ای یافت نشد</string>
+    <string name="search_in_pharmacies_button">جستجو در داروخانه‌ها</string>
+    <string name="more_info_button">اطلاعات بیشتر</string>
 </resources>
