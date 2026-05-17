@@ -7,7 +7,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/_24sdp"
         app:cardCornerRadius="16dp"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -15,9 +15,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="364dp"
-            android:layout_height="130dp"
-            android:layout_marginBottom="0dp"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_95sdp"
             android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -29,10 +28,10 @@
                 android:id="@+id/engNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/_6sdp"
                 android:text="TextView"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="@dimen/_14ssp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/typeTextView">
 
@@ -42,10 +41,10 @@
                 android:id="@+id/faNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="@dimen/_4sdp"
                 android:text="TextView"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="@dimen/_14ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/typeTextView"
                 app:layout_constraintEnd_toStartOf="@+id/typeTextView"
                 app:layout_constraintTop_toTopOf="@+id/typeTextView">
@@ -56,10 +55,10 @@
                 android:id="@+id/dosageTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="@dimen/_4sdp"
                 android:text="TextView"
                 android:textColor="@color/red"
-                android:textSize="20sp"
+                android:textSize="@dimen/_14ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/faNameTextView"
                 app:layout_constraintEnd_toStartOf="@+id/faNameTextView"
                 app:layout_constraintTop_toTopOf="@+id/faNameTextView" />
@@ -68,30 +67,32 @@
                 android:id="@+id/typeTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
                 android:text="TextView"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="@dimen/_14ssp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/pharmacyButton"
-                android:layout_width="170dp"
+                android:layout_width="@dimen/_130sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="6dp"
-                android:layout_marginBottom="8dp"
-                android:text="جستجو در داروخانه‌ها"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:textSize="@dimen/_10ssp"
+                android:text="@string/search_in_pharmacies_button"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <Button
                 android:id="@+id/infoButton"
-                android:layout_width="170dp"
+                android:layout_width="@dimen/_121sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="اطلاعات بیشتر"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:textSize="@dimen/_10ssp"
+                android:text="@string/more_info_button"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/pharmacyButton"
                 app:layout_constraintStart_toStartOf="parent" />

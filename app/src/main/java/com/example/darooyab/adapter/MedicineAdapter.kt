@@ -6,7 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.darooyab.databinding.MedicineRecyclerLayoutBinding
 import com.example.darooyab.model.Medicine
 
-class MedicineAdapter(val resultsList: MutableList<Medicine>,val onPharmacyClick: (Int) -> Unit) : RecyclerView.Adapter<MedicineAdapter.MyViewHolder>() {
+class MedicineAdapter(val resultsList: MutableList<Medicine>, val onPharmacyClick: (Int) -> Unit) :
+    RecyclerView.Adapter<MedicineAdapter.MyViewHolder>() {
 
     class MyViewHolder(val binding: MedicineRecyclerLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -15,11 +16,10 @@ class MedicineAdapter(val resultsList: MutableList<Medicine>,val onPharmacyClick
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        MyViewHolder(MedicineRecyclerLayoutBinding
-            .inflate(LayoutInflater.from(parent.context), parent, false))
-
-
-
+        MyViewHolder(
+            MedicineRecyclerLayoutBinding
+                .inflate(LayoutInflater.from(parent.context), parent, false)
+        )
 
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
@@ -35,7 +35,7 @@ class MedicineAdapter(val resultsList: MutableList<Medicine>,val onPharmacyClick
     }
 
     override fun getItemCount(): Int {
-        return  resultsList.size
+        return resultsList.size
     }
 
 

@@ -14,7 +14,11 @@ import com.example.darooyab.databinding.FragmentMedicineResultsBinding
 import com.example.darooyab.model.Medicine
 
 class MedicineResultsFragment : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
         val binding = FragmentMedicineResultsBinding
             .inflate(LayoutInflater.from(activity), container, false)
 
@@ -33,7 +37,7 @@ class MedicineResultsFragment : Fragment() {
                 i.faName.contains(medicineName, ignoreCase = true) ||
                 i.dosage.contains(medicineName, ignoreCase = true)
             ) {
-                resultsList.add(Medicine(i.id,i.engName, i.faName, i.dosage,i.type))
+                resultsList.add(Medicine(i.id, i.engName, i.faName, i.dosage, i.type))
             }
         }
 
@@ -50,7 +54,8 @@ class MedicineResultsFragment : Fragment() {
             val action = MedicineResultsFragmentDirections
                 .actionMedicineResultsFragmentToPharmaciesResultsFragment(drugId)
 
-            findNavController().navigate(action)}
+            findNavController().navigate(action)
+        }
 
 
 
