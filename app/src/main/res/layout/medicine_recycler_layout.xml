@@ -83,6 +83,7 @@
                 android:layout_marginBottom="@dimen/_6sdp"
                 android:textSize="@dimen/_10ssp"
                 android:text="@string/search_in_pharmacies_button"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -93,6 +94,7 @@
                 android:layout_marginBottom="@dimen/_6sdp"
                 android:textSize="@dimen/_10ssp"
                 android:text="@string/more_info_button"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/pharmacyButton"
                 app:layout_constraintStart_toStartOf="parent" />
